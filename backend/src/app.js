@@ -10,9 +10,11 @@ const authRouters = require('./routers/auth.router')
 const petRouters = require('./routers/pets.router')
 const vaccineRouters = require('./routers/vaccines.router')
 
+const cors = require('cors');
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
   handleResponses.success({

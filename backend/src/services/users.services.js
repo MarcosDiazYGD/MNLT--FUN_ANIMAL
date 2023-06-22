@@ -144,7 +144,9 @@ const postUser = (req, res) => {
         status: 404,
         message: "the user was not created successfully",
         fields: {
-
+          username: 'string',
+          email: 'string',
+          password: 'string'
         },
         data: err,
       });

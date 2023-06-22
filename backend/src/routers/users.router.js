@@ -3,7 +3,8 @@ const userServices = require("../services/users.services");
 const passportJwt = require("../middlewares/auth.middleware");
 
 router.route("/")
-  .get(userServices.getAllUsers).post(userServices.postUser);
+  .get(userServices.getAllUsers)
+  .post(userServices.postUser);
 
 router.route("/me")
   .get(passportJwt, userServices.getMyUser)
