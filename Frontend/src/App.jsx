@@ -11,8 +11,7 @@ import Vaccines from './pages/Vaccines';
 import InvalidRoute from './pages/InvalidRoute';
 import Layout from './components/Layout';
 import ProtectedRoutes from './components/ProtectedRoutes';
-import './App.css'
-
+import CreatePet from './pages/CreatePet';
 function App() {
   return (
     <HashRouter>
@@ -23,10 +22,12 @@ function App() {
           <Route element={<ProtectedRoutes />}>
             <Route path="/" element={<Home />} />
             <Route path="/pets" element={<Pets />} />
+            <Route path="/pets/create_pet" element={<CreatePet />} />
             <Route path="/vaccines" element={<Vaccines />} />
-            <Route path="*" element={<InvalidRoute />} />
+            {/* <Route path="/pets/create_vaccine" element={< />} /> */}
           </Route>
         </Route>
+        <Route path="*" element={<InvalidRoute />} />
       </Routes>
     </HashRouter>
   );

@@ -1,0 +1,52 @@
+.container__size {
+  width: 50%;
+  max-width: 400px;
+  height: 50%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff5b;
+}
+
+.container__options_radio {
+  width: 80%;
+  max-width: 20rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input  {
+  width: 80%;
+  max-width: 20rem;
+  height: 2rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  transition: box-shadow .3s ease-out;
+}
+
+.input:focus{
+  outline: none;
+  box-shadow: 0 0 5px rgb(40, 39, 39);
+}
+
+.button {
+  width: 80%;
+  max-width: 20rem;
+  height: 2rem;
+  padding: .5rem 1rem;
+  border: transparent;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+}

@@ -10,11 +10,11 @@ const configs = {
   db: {
     development: {
       dialect: "postgres",
-      host: "localhost",
-      port: 5432,
-      username: "postgres",
-      password: "2119",
-      database: "postgres", // fun_animal
+      host: process.env.DB_HOST,
+      port: process.env.DB_PORT,
+      username: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME,
       define: {
         timestamps: true, //? nos obliga a que todas las tablas tengan la propiedad created_at y updated_at
         underscored: true, //? pasa de lowerCamelCase a snake_case

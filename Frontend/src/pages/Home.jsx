@@ -1,9 +1,10 @@
-import {Link} from 'react-router-dom'
-const Home = () => {
+import { Link } from "react-router-dom"
 
+const Home = () => {
   return(
   <>
-    <Link to='/pets' >ver pets</Link>
+    <h1>Home</h1>
+    <Link to="/pets" > Go to Pets</Link>
   </>
   )
 }

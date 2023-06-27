@@ -1,9 +1,9 @@
 const VaccinesController = require("../controllers/vaccines.controller");
-const handleResponses = require("../utils/handleResponses");
+const handleResponces = require('../utils/handleResponses')
 
 const getAllVaccines = (req, res) => {
-  petsController
-    .findAllPets()
+  VaccinesController
+    .findAllVaccine()
     .then((data) => {
       handleResponces.success({
         res,
@@ -85,8 +85,8 @@ const getVaccineById = (req, res) => {
 
   const deleteVaccine = (req, res) => {
     const id = req.params.id;
-    petsController
-      .deletePets(id)
+    VaccinesController
+      .deleteVaccines(id)
       .then((data) => {
         if (data) {
           handleResponces.success({

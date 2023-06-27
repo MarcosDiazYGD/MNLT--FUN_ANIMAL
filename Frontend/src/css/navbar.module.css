@@ -1,12 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #dfffd0;
-}
 
 .navbar {
   width: 100%;
@@ -18,7 +9,7 @@ body {
   background: #6daf6c;
 }
 
-.container--search {
+.container__search {
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -28,20 +19,20 @@ body {
   background: #fff;
 }
 
-.container--search input {
+.container__search input {
   width: 100%;
   border-color: transparent;
 }
 
-.container--search input:focus {
+.container__search input:focus {
   outline: none;
 }
 
-.container--search div:nth-child(2) {
+.container__search div:nth-child(2) {
   padding: 0 1rem;
 }
 
-.c--search {
+.c__search {
   width: 90%;
   /* background-color: rgb(26, 26, 26); */
 }

@@ -21,16 +21,16 @@ const Signin = () => {
   }
 
   return (
-    <>
+    <div className="Signing FullScreen">
       <div className="container__login">
-        <input type="text" placeholder="Name" value={username} onChange={e => setUsername(e.target.value)} />
-        <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
+        <input className="input-center" type="text" placeholder="Name" value={username} onChange={e => setUsername(e.target.value)} />
+        <input className="input-center" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
+        <input className="input-center" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
 
         <button onClick={submit}>Enviar</button>
         <Link to='/login'>Ya tienes una cuenta</Link>
       </div>
-    </>
+    </div>
   )
 }
 

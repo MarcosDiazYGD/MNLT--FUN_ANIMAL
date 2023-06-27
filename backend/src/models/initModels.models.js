@@ -1,17 +1,15 @@
 const Users = require("./users");
 const Pets = require("./pets");
 const PetsVaccinated = require("./petsVaccinated");
-const vaccines = require("./vaccines");
+const Vaccines = require("./vaccines");
 
 const initModels = () => {
-  Users.hasMany(Pets);
   Pets.belongsTo(Users);
+  Users.hasMany(Pets);
 
-  Pets.hasMany(PetsVaccinated);
-  PetsVaccinated.belongsTo(Pets);
-
-  vaccines.hasMany(PetsVaccinated);
-  PetsVaccinated.belongsTo(vaccines);
+  Pets.belongsToMany(Vaccines, {through: PetsVaccinated})
+  Vaccines.belongsToMany(Pets, {through: PetsVaccinated})
+  
 };
 
 module.exports = initModels;
